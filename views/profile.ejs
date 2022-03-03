@@ -1,0 +1,30 @@
+<%- include("partial/header")%>
+<%- include("partial/topbar")%>
+<%- include("partial/nav")%>
+<body>
+    <div class="container">
+        <h1>Profile</h1>
+        <br />
+        <br />
+        <br />
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><%= data.username%></td>
+              <td><%= data.email%></td>
+              <td><%= data.phone%></td>
+              <td><%= data.address%></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+<%- include("partial/footer")%>
